@@ -8,7 +8,7 @@ import datetime
 import time 
 import random
 import plotly.express as px
-import plotly.graph_objects as go
+import plotly.graph_objects 
 from streamlit_lottie import st_lottie
 import requests
 
