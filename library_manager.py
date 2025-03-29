@@ -1,11 +1,11 @@
 import streamlit as st
-import pandas as st
+import pandas as pd
 import json
 import os
 import datetime as dt
 import time 
 import random
-import plotly.express as px
+import plotly.express as pd
 import plotly.graph_objects as go
 from streamlit_lottie import st_lottie
 import requests
@@ -142,7 +142,7 @@ def add_book(title, author, publication_year, genre, read_status):
          "publication_year": publication_year,
          "genre": genre,
          "read_status": read_status,
-         "added_date": datetime.now().strftime("%Y.%m.%d.%H.%M.%S")
+         "added_date": "datetime".now().strftime("%Y.%m.%d.%H.%M.%S")
     }
     st.session_state.library.append(book)
     save_library()
